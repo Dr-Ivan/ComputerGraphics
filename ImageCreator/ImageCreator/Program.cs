@@ -6,7 +6,7 @@ public class DrawShapesForm : Form
 {
     public DrawShapesForm()
     {
-        this.Text = "Ћабораторна¤ є 5 - ƒерев¤нко »ван";
+        this.Text = "Лабораторная № 5 - Деревянко Иван";
         this.Size = new Size(641, 438);
         this.FormBorderStyle = FormBorderStyle.FixedSingle;
         this.MaximizeBox = false;
@@ -17,7 +17,7 @@ public class DrawShapesForm : Form
     {
         Graphics g = e.Graphics;
 
-        // пр¤моугольник на фоне
+        // прямоугольник на фоне
         using (SolidBrush greenBrush = new SolidBrush(Color.FromArgb(51, 50, 50)))
         {
             g.FillRectangle(greenBrush, 0, 0, 640, 400);
@@ -289,7 +289,7 @@ public class DrawShapesForm : Form
 
             Font font = new Font("Arial", 7, FontStyle.Bold);
             Brush b = new SolidBrush(Color.FromArgb(219, 220, 219));
-            g.DrawString(" ќ—ћќ‘Ћќ“", font, b, 300, 90);
+            g.DrawString("КОСМОФЛОТ", font, b, 300, 90);
 
 
             using (SolidBrush brush = new SolidBrush(Color.FromArgb(0, 204, 255)))
@@ -313,8 +313,8 @@ public class DrawShapesForm : Form
 
         // рисование ракеты 2
         {
-            int offsetX = -190; // —двиг по X
-            int offsetY = 180; // —двиг по Y
+            int offsetX = -190; // сдвиг по X
+            int offsetY = 180; // сдвиг по Y
 
             Point[] triangle = {
                 new Point(550 + offsetX, 85 + offsetY),
@@ -417,7 +417,7 @@ public class DrawShapesForm : Form
 
             Font font = new Font("Arial", 7, FontStyle.Bold);
             Brush b = new SolidBrush(Color.FromArgb(219, 220, 219));
-            g.DrawString(" ќ—ћќ‘Ћќ“", font, b, 300 + offsetX, 90 + offsetY);
+            g.DrawString("КОСМОФЛОТ", font, b, 300 + offsetX, 90 + offsetY);
 
             using (SolidBrush brush = new SolidBrush(Color.FromArgb(0, 204, 255)))
             using (Pen pen = new Pen(Color.FromArgb(0, 152, 205), 5))
