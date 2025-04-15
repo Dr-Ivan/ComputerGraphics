@@ -400,5 +400,5 @@ FodyWeavers.xsd
 *.sln.iml
 
 # Python
-/.venv/
-/.idea/
+**/.venv/
+**/.idea/
